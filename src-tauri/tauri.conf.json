@@ -6,13 +6,71 @@
     "distDir": "../dist",
     "withGlobalTauri": false
   },
-  "package": {
-    "productName": "ReminderStickyNotes",
-    "version": "0.0.0"
-  },
   "tauri": {
     "allowlist": {
       "all": false,
+      "notification": {
+        "all": true
+      },
+      "window": {
+        "all": true,
+        "center": false,
+        "close": false,
+        "create": false,
+        "hide": false,
+        "maximize": false,
+        "minimize": false,
+        "print": false,
+        "requestUserAttention": false,
+        "setAlwaysOnTop": false,
+        "setClosable": false,
+        "setContentProtected": false,
+        "setCursorGrab": false,
+        "setCursorIcon": false,
+        "setCursorPosition": false,
+        "setCursorVisible": false,
+        "setDecorations": false,
+        "setFocus": false,
+        "setFullscreen": false,
+        "setIcon": false,
+        "setIgnoreCursorEvents": false,
+        "setMaxSize": false,
+        "setMaximizable": false,
+        "setMinSize": false,
+        "setMinimizable": false,
+        "setPosition": false,
+        "setResizable": false,
+        "setSize": false,
+        "setSkipTaskbar": false,
+        "setTitle": false,
+        "show": false,
+        "startDragging": false,
+        "unmaximize": false,
+        "unminimize": false
+      },
+      "dialog": {
+        "all": true,
+        "ask": false,
+        "confirm": false,
+        "message": false,
+        "open": false,
+        "save": false
+      },
+      "fs": {
+        "all": true,
+        "copyFile": false,
+        "createDir": false,
+        "exists": false,
+        "readDir": false,
+        "readFile": false,
+        "removeDir": false,
+        "removeFile": false,
+        "renameFile": false,
+        "scope": [
+          "$APPDATA/*"
+        ],
+        "writeFile": false
+      },
       "shell": {
         "all": false,
         "open": true
@@ -21,7 +79,7 @@
     "bundle": {
       "active": true,
       "targets": "all",
-      "identifier": "com.tauri.dev",
+      "identifier": "com.ReminderStickyNotes.build",
       "icon": [
         "icons/32x32.png",
         "icons/128x128.png",
@@ -37,7 +95,7 @@
       {
         "fullscreen": false,
         "resizable": true,
-        "title": "ReminderStickyNotes",
+        "title": "Reminder StickyNotes",
         "width": 800,
         "height": 600
       }
